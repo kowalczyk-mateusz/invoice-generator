@@ -49,10 +49,10 @@ margin-bottom: 10rem;
 `
 
 const Seller = styled.div`
-width: 315px;
+width: 330px;
 `
 const Buyer = styled.div`
-width: 315px;
+width: 330px;
 `
 const SellerInfo = styled.div` 
 `

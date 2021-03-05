@@ -30,7 +30,7 @@ justify-content: flex-end;
 margin-bottom: 2rem;
 `
 const DataInfo = styled.div`
-width: 315px;
+width: 330px;
 display: flex;
 flex-direction: column;
 align-items: center;

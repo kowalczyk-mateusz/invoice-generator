@@ -10,7 +10,7 @@ const Line = () => {
 
 
 const StyledLine = styled.div`
-width: 315px;
+width: 330px;
 height: 1px;
 background-color: black;
 `

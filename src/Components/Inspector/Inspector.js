@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Signatures from './Inspector-components/Signatures';
 import Data from './Inspector-components/Data'
 import SellerBuyer from './Inspector-components/SellerBuyer'
-
+import Payment from './Inspector-components/Payment'
 const Inspector = () => {
     return (
         <StyledInspector>
@@ -13,6 +13,7 @@ const Inspector = () => {
             <InspectorPreview>
                 <Data />
                 <SellerBuyer/>
+                <Payment />
                 <Signatures />
             </InspectorPreview>
         </StyledInspector>
