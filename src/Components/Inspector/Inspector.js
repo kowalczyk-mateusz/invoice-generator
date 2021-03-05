@@ -4,6 +4,7 @@ import Signatures from './Inspector-components/Signatures';
 import Data from './Inspector-components/Data'
 import SellerBuyer from './Inspector-components/SellerBuyer'
 import Payment from './Inspector-components/Payment'
+import InvoiceService from './Inspector-components/InvoiceService'
 const Inspector = () => {
     return (
         <StyledInspector>
@@ -13,6 +14,7 @@ const Inspector = () => {
             <InspectorPreview>
                 <Data />
                 <SellerBuyer/>
+                <InvoiceService />
                 <Payment />
                 <Signatures />
             </InspectorPreview>

@@ -19,7 +19,7 @@ const Payment = () => {
                 <Line/>
                 <BankNumber>
                 <Label> Numer konta</Label>
-                <Content> 66 1020 2313 0000 3102 0021 8941</Content>
+                <Content> 11 2222 3333 4444 5555 6666 7777</Content>
                 </BankNumber>
             </PaymentInfo>
             <PaymentValue>

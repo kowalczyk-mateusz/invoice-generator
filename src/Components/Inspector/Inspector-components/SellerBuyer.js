@@ -8,16 +8,16 @@ const SellerBuyer = () => {
                 <BackgroundHeadline text="Sprzedawca"/>
                 <SellerInfo>
                     <Company>
-                        MAL-TAP
+                        COMPANY NAME
                     </Company>
                     <NIP>
-                        NIP: 9541607505
+                        NIP: 1234567890
                     </NIP>
                     <Address>
-                        Pogodna 13/56
+                        Street 56/521
                     </Address>
                     <CityCode>
-                        40-319 Katowice
+                        00-000 CityName
                     </CityCode>
                 </SellerInfo>
             </Seller>
@@ -25,16 +25,16 @@ const SellerBuyer = () => {
                 <BackgroundHeadline text="Nabywca"/>
                 <BuyerInfo>
                     <Company>
-                        WSPÓLNOTA MIESZKANIOWA UL. WALLISA 2.
+                        COMPANY NAME COMPANY NAME COMPAMY NAME
                     </Company>
                     <NIP>
-                        NIP: 6272363990
+                        NIP: 1234567890
                     </NIP>
                     <Address>
-                        ul. Stanisława Wallisa 2
+                        Street 56/521 Street 56/521
                     </Address>
                     <CityCode>
-                        41-605 Świętochłowice
+                        00-000 CityName
                     </CityCode>
                 </BuyerInfo>
             </Buyer>
@@ -45,7 +45,7 @@ const SellerBuyer = () => {
 const StyledSellerBuyer = styled.div`
 display: flex;
 justify-content: space-between;
-margin-bottom: 10rem;
+margin-bottom: 2rem;
 `
 
 const Seller = styled.div`
