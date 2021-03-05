@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Signatures from './Inspector-components/Signatures';
+import Data from './Inspector-components/Data'
+import SellerBuyer from './Inspector-components/SellerBuyer'
 
 const Inspector = () => {
     return (
@@ -9,6 +11,8 @@ const Inspector = () => {
                 Podgląd faktury
             </Headline>
             <InspectorPreview>
+                <Data />
+                <SellerBuyer/>
                 <Signatures />
             </InspectorPreview>
         </StyledInspector>
@@ -34,5 +38,6 @@ const InspectorPreview = styled.div`
 width: 803px;
 height: 1132px;
 background-color: white;
+padding: 4rem 3rem 0rem 3rem;
 `
 export default Inspector;
