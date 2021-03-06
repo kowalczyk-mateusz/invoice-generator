@@ -19,10 +19,10 @@ const InvoiceService = () => {
                         Nazwa towaru lub usługi
                     </ServiceName>
                     <Jm>
-                        szt.
+                        Jm.
                     </Jm>
                     <Qty>
-                        1
+                        Ilość
                     </Qty>
                     <PriceNetto>
                         Cena Netto
@@ -31,13 +31,13 @@ const InvoiceService = () => {
                         Wartość netto
                     </ValueNetto>
                     <Vat>
-                        8%
+                        Stawka VAT
                     </Vat>
                     <PriceVat>
-                        3 109,78
+                        Kwota VAT
                     </PriceVat>
                     <ValueBrutto>
-                        41 982,00
+                        Wartość brutto
                     </ValueBrutto>
                 </ServicesLables>
             </Services>
