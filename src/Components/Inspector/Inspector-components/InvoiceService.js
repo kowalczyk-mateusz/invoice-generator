@@ -17,6 +17,10 @@ import {StyledInvoiceService,
      Vat, 
      Outcome,
      OutcomeValues,
+     OutcomeValueNetto,
+     OutcomeVat,
+     OutcomePriceVat,
+     OutcomeValueBrutto,
      OutcomeHeadline} from './Styles/InvoiceServiceStyles'
 const InvoiceService = () => {
     return (
@@ -65,18 +69,18 @@ const InvoiceService = () => {
                         W tym
                     </OutcomeHeadline>
                     <OutcomeValues>
-                    <ValueNetto>
+                    <OutcomeValueNetto>
                         38 872,22
-                    </ValueNetto>
-                    <Vat>
+                    </OutcomeValueNetto>
+                    <OutcomeVat>
                         8% 
-                    </Vat>
-                    <PriceVat>
+                    </OutcomeVat>
+                    <OutcomePriceVat>
                         3 109,78 
-                    </PriceVat>
-                    <ValueBrutto>
+                    </OutcomePriceVat>
+                    <OutcomeValueBrutto>
                         41 982,00
-                    </ValueBrutto>
+                    </OutcomeValueBrutto>
                     </OutcomeValues>
                 </Outcome>
                 <Outcome>
@@ -84,18 +88,18 @@ const InvoiceService = () => {
                         Razem
                     </OutcomeHeadline>
                     <OutcomeValues>
-                    <ValueNetto>
+                    <OutcomeValueNetto>
                         38 872,22
-                    </ValueNetto>
-                    <Vat>
+                    </OutcomeValueNetto>
+                    <OutcomeVat>
                         
-                    </Vat>
-                    <PriceVat>
+                    </OutcomeVat>
+                    <OutcomePriceVat>
                         3 109,78 
-                    </PriceVat>
-                    <ValueBrutto>
+                    </OutcomePriceVat>
+                    <OutcomeValueBrutto>
                         41 982,00
-                    </ValueBrutto>
+                    </OutcomeValueBrutto>
                     </OutcomeValues>
                 </Outcome>
             </Services>
