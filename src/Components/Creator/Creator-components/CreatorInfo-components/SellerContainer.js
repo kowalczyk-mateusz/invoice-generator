@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledSellerContainer, Company, NIP, Address, CityCode} from './Styles/SellerContainerStyles.js'
+import {StyledSellerContainer, Company, NIP, Address, CityCode, Code, City} from './Styles/SellerContainerStyles.js'
 import {Headline, Input, Inputs, Label} from '../Styles/CreatorInfoStyles'
 const SellerContainer = () => {
     return (
@@ -20,11 +20,14 @@ const SellerContainer = () => {
             <Label for="address">Ulica</Label>
             <Input name="address"/>
         </Address>
-        <CityCode>
-            <Label for="city">Miasto / Kod</Label>
+        <City>
+            <Label for="city">Miasto</Label>
             <Input name="city"/>
+        </City>
+        <Code>
+            <Label for="code">Kod</Label>
             <Input name="code"/>
-        </CityCode>
+        </Code>
         </Inputs>
     </StyledSellerContainer>
     );
