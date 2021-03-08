@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import React from 'react';
+import React, {useState} from 'react';
 import BackgroundHeadline from '../../../Assets/BackgroundHeadline'
 const SellerBuyer = () => {
+    const [bold, setBold] = useState(true);
     return (
         <StyledSellerBuyer>
             <Seller>
-                <BackgroundHeadline text="Sprzedawca"/>
+                <BackgroundHeadline bold={bold} text="Sprzedawca"/>
                 <SellerInfo>
                     <Company>
                         COMPANY NAME
@@ -22,7 +23,7 @@ const SellerBuyer = () => {
                 </SellerInfo>
             </Seller>
             <Buyer>
-                <BackgroundHeadline text="Nabywca"/>
+                <BackgroundHeadline bold={bold} text="Nabywca"/>
                 <BuyerInfo>
                     <Company>
                         COMPANY NAME COMPANY NAME COMPAMY NAME

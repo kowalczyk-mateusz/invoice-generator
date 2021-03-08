@@ -11,7 +11,7 @@ font-weight: bold;
 `
 export const SplitPayment = styled.div`
 text-align: center;
-padding: 0.25rem;
+padding: 0.25rem 0rem 0.75rem 0rem;
 `
 export const Services = styled.div`
 
@@ -91,7 +91,7 @@ padding-left: 20rem;
 export const OutcomeHeadline = styled.div`
 font-weight: bold;
 width: 3rem;
-padding: 0.25rem 0rem
+padding: 0.25rem 0rem;
 `
 export const OutcomeValues = styled.div`
 border-bottom: 1px solid black;
