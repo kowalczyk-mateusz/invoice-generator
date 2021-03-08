@@ -90,3 +90,22 @@ padding-top: 5px;
 line-height: 15px;
 height: 100%;
 `
+export const Outcome = styled.div`
+display: flex;
+justify-content: flex-end;
+padding-left: 412px;
+font-size: 0.8rem;
+`
+export const OutcomeHeadline = styled.div`
+border-right: 1px solid black;
+font-weight: bold;
+width: 3rem;
+`
+export const OutcomeValues = styled.div`
+display: flex;
+border-bottom: 1px solid black;
+border-right: 1px solid black;
+justify-content: flex-end;
+width: 100%;
+text-align: center;
+`
