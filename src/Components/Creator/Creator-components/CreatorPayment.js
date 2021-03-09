@@ -2,24 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import {Label, Input} from './Styles/CreatorInfoStyles'
 import {PaymentMethod, AccountNumber, PaymentDeadline, SplitPayment, StyledCreatorPayment} from './Styles/CreatorPaymentStyles'
-const CreatorPayment = () => {
+const CreatorPayment = ({handleChange, invoice, setInvoice}) => {
     return (
         <StyledCreatorPayment>
             <PaymentMethod>
                 <Label>Sposób płatności</Label>
-                <Input/>
+                <Input name="paymentMethod" onChange={handleChange} value={invoice.paymentMethod}/>
             </PaymentMethod>
             <PaymentDeadline>
                 <Label>Termin płatności</Label>
-                <Input/>
+                <Input name="paymentDeadline" onChange={handleChange} value={invoice.paymentDeadline}/>
             </PaymentDeadline>
             <AccountNumber>
             <Label>Number konta</Label>
-            <Input/>
+            <Input name="accountNumber" onChange={handleChange} value={invoice.accountNumber}/>
             </AccountNumber>
             <SplitPayment>
             <Label>Mechanizm podzielonej płatności</Label>
-            <Input type="checkbox"/>
+            <Input type="checkbox" name="splitPayment" checked={invoice.splitPayment} onChange={handleChange}/>
             </SplitPayment>
         </StyledCreatorPayment>
     );

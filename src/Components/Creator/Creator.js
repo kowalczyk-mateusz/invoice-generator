@@ -4,16 +4,16 @@ import CreatorInfo from './Creator-components/CreatorInfo'
 import CreatorServices from './Creator-components/CreatorServices'
 import CreatorPayment from './Creator-components/CreatorPayment'
 import {Link} from 'react-router-dom'
-const Creator = () => {
+const Creator = ({handleChange, invoice, setInvoice}) => {
     return (
         <StyledCreator>
-            <CreatorInfo>
+            <CreatorInfo handleChange={handleChange} invoice={invoice} setInvoice={setInvoice}>
 
             </CreatorInfo>
-            <CreatorServices>
+            <CreatorServices handleChange={handleChange} invoice={invoice} setInvoice={setInvoice}>
 
             </CreatorServices>
-            <CreatorPayment>
+            <CreatorPayment handleChange={handleChange} invoice={invoice} setInvoice={setInvoice}>
 
             </CreatorPayment>
             <Link to="/inspect">Podgląd</Link>

@@ -4,12 +4,12 @@ import {StyledCreatorInfo} from './Styles/CreatorInfoStyles'
 import DateContainer from './CreatorInfo-components/DateContainer'
 import SellerContainer from './CreatorInfo-components/SellerContainer'
 import BuyerContainer from './CreatorInfo-components/BuyerContainer'
-const CreatorInfo = () => {
+const CreatorInfo = ({handleChange, invoice, setInvoice}) => {
     return (
         <StyledCreatorInfo>
-            <DateContainer />
-            <SellerContainer />
-            <BuyerContainer />
+            <DateContainer handleChange={handleChange} invoice={invoice} setInvoice={setInvoice} />
+            <SellerContainer handleChange={handleChange} invoice={invoice} setInvoice={setInvoice}/>
+            <BuyerContainer handleChange={handleChange} invoice={invoice} setInvoice={setInvoice}/>
         </StyledCreatorInfo>
     );
 }

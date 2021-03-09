@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {StyledDateContainer, City, DateInputs, ReleaseDate, SaleDate, InvoiceNumber} from './Styles/DateContainerStyles'
 import {Label, Headline, Input} from '../Styles/CreatorInfoStyles'
 
-const DateContainer = () => {
+const DateContainer = ({handleChange, invoice, setInvoice}) => {
     return (
         <StyledDateContainer>
         <Headline>
@@ -11,20 +11,20 @@ const DateContainer = () => {
         </Headline>
         <DateInputs>
             <InvoiceNumber>
-            <Label for="invoiceNr">Nr faktury</Label>
-            <Input name="invoiceNr"/>
+            <Label htmlFor="invoiceNr">Nr faktury</Label>
+            <Input name="invoiceNumber" value={invoice.invoiceNumber} onChange={handleChange}/>
             </InvoiceNumber>
         <City>
-            <Label for="city">Miejsce wystawienia</Label>
-            <Input name="city"/>
+            <Label htmlFor="city">Miejsce wystawienia</Label>
+            <Input name="city" value={invoice.city} onChange={handleChange}/>
         </City>
         <ReleaseDate>
-            <Label for="releaseDate">Data wystawienia</Label>
-            <Input name="releaseDate" type="date"/>
+            <Label htmlFor="releaseDate">Data wystawienia</Label>
+            <Input name="releaseDate" type="date" value={invoice.releaseDate} onChange={handleChange}/>
         </ReleaseDate>
         <SaleDate>
-            <Label for="saleDate">Data sprzedaży</Label>
-            <Input name="saleDate" type="date"/>
+            <Label htmlFor="saleDate">Data sprzedaży</Label>
+            <Input name="saleDate" type="date" value={invoice.sellDate} onChange={handleChange}/>
         </SaleDate>
         </DateInputs>
     </StyledDateContainer>
