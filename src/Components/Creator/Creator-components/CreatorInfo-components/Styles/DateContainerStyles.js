@@ -23,3 +23,6 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 `
+export const InvoiceNumber = styled.div`
+
+`

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {StyledDateContainer, City, DateInputs, ReleaseDate, SaleDate} from './Styles/DateContainerStyles'
+import {StyledDateContainer, City, DateInputs, ReleaseDate, SaleDate, InvoiceNumber} from './Styles/DateContainerStyles'
 import {Label, Headline, Input} from '../Styles/CreatorInfoStyles'
 
 const DateContainer = () => {
@@ -10,6 +10,10 @@ const DateContainer = () => {
             Data
         </Headline>
         <DateInputs>
+            <InvoiceNumber>
+            <Label for="invoiceNr">Nr faktury</Label>
+            <Input name="invoiceNr"/>
+            </InvoiceNumber>
         <City>
             <Label for="city">Miejsce wystawienia</Label>
             <Input name="city"/>
