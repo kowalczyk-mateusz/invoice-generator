@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React, {useState} from 'react';
 import BackgroundHeadline from '../../../Assets/BackgroundHeadline'
-const SellerBuyer = () => {
+const SellerBuyer = ({invoiceInfo}) => {
     const [bold, setBold] = useState(true);
     return (
         <StyledSellerBuyer>
@@ -9,16 +9,16 @@ const SellerBuyer = () => {
                 <BackgroundHeadline bold={bold} text="Sprzedawca"/>
                 <SellerInfo>
                     <Company>
-                        COMPANY NAME
+                        {invoiceInfo.sellerCompany}
                     </Company>
                     <NIP>
-                        NIP: 1234567890
+                    {invoiceInfo.sellerNip}
                     </NIP>
                     <Address>
-                        Street 56/521
+                    {invoiceInfo.sellerAddress}
                     </Address>
                     <CityCode>
-                        00-000 CityName
+                    {invoiceInfo.sellerCode}{invoiceInfo.sellerCity}
                     </CityCode>
                 </SellerInfo>
             </Seller>
@@ -26,16 +26,16 @@ const SellerBuyer = () => {
                 <BackgroundHeadline bold={bold} text="Nabywca"/>
                 <BuyerInfo>
                     <Company>
-                        COMPANY NAME COMPANY NAME COMPAMY NAME
+                    {invoiceInfo.buyerCompany}
                     </Company>
                     <NIP>
-                        NIP: 1234567890
+                    {invoiceInfo.buyerNip}
                     </NIP>
                     <Address>
-                        Street 56/521 Street 56/521
+                    {invoiceInfo.buyerAddress}
                     </Address>
                     <CityCode>
-                        00-000 CityName
+                    {invoiceInfo.buyerCity}{invoiceInfo.buyerCode}
                     </CityCode>
                 </BuyerInfo>
             </Buyer>

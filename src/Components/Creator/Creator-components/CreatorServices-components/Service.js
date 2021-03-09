@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Label, Input,} from '../Styles/CreatorInfoStyles'
-import { ServiceName, StyledService, Qty, PriceNetto, Vat, Option, Select} from './ServiceStyles'
+import { ServiceName, StyledService, Qty, PriceNetto, Vat,PriceBrutto, Option, Select} from './ServiceStyles'
 const Service = ({handleChange, invoice, setInvoice}) => {
 
     return (
@@ -17,6 +17,10 @@ const Service = ({handleChange, invoice, setInvoice}) => {
                 <Label>Cena Netto</Label>
                 <Input name="priceNetto" value={invoice.priceNetto} onChange={handleChange} />
             </PriceNetto>
+            <PriceBrutto>
+                <Label>Cena Brutto</Label>
+                <Input name="priceBrutto" value={invoice.PriceBrutto} onChange={handleChange} />
+            </PriceBrutto>
             <Vat>
                 <Label>Stawka VAT</Label>
                 <Select name="vat" onChange={handleChange} value={invoice.vat}>

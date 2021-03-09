@@ -6,17 +6,20 @@ import SellerBuyer from './Inspector-components/SellerBuyer'
 import Payment from './Inspector-components/Payment'
 import InvoiceService from './Inspector-components/InvoiceService'
 const Inspector = () => {
+
+    const data = localStorage.getItem('Invoice')
+    const invoiceInfo = JSON.parse(data)
     return (
         <StyledInspector>
             <Headline>
                 Podgląd faktury
             </Headline>
             <InspectorPreview>
-                <Data />
-                <SellerBuyer/>
-                <InvoiceService />
-                <Payment />
-                <Signatures />
+                <Data invoiceInfo={invoiceInfo}/>
+                <SellerBuyer invoiceInfo={invoiceInfo}/>
+                <InvoiceService invoiceInfo={invoiceInfo}/>
+                <Payment invoiceInfo={invoiceInfo}/>
+                <Signatures/>
             </InspectorPreview>
         </StyledInspector>
     );

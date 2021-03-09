@@ -1,35 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Lp, ServiceName, Qty, Jm, PriceNetto, ValueNetto, Vat, VatPrice, BruttoValue, StyledServicesData} from './Styles/ServicesDataStyles'
-const ServicesData = () => {
+const ServicesData = ({invoiceInfo}) => {
     return (
         <StyledServicesData>
             <Lp>
                 1
             </Lp>
             <ServiceName>
-                Remont klatki schodowej(ostatni etap).
+            {invoiceInfo.serviceName}
             </ServiceName>
             <Jm>
                 szt
             </Jm>
             <Qty>
-                1 
+            {invoiceInfo.qty}
             </Qty>
             <PriceNetto>
-                38 872,22
+            {invoiceInfo.priceNetto}
             </PriceNetto>
             <ValueNetto>
-                38 872,22 
+                
             </ValueNetto>
             <Vat>
-                8%
+            {invoiceInfo.vat}
             </Vat>
             <VatPrice>
-                3 109,78
+                
             </VatPrice>
             <BruttoValue>
-                41 982,00
+            {invoiceInfo.priceBrutto}
             </BruttoValue>
 
         </StyledServicesData>

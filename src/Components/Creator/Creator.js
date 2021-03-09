@@ -4,7 +4,7 @@ import CreatorInfo from './Creator-components/CreatorInfo'
 import CreatorServices from './Creator-components/CreatorServices'
 import CreatorPayment from './Creator-components/CreatorPayment'
 import {Link} from 'react-router-dom'
-const Creator = ({handleChange, invoice, setInvoice}) => {
+const Creator = ({handleChange, invoice, setInvoice, saveDataHandler}) => {
     return (
         <StyledCreator>
             <CreatorInfo handleChange={handleChange} invoice={invoice} setInvoice={setInvoice}>
@@ -17,6 +17,7 @@ const Creator = ({handleChange, invoice, setInvoice}) => {
 
             </CreatorPayment>
             <Link to="/inspect">Podgląd</Link>
+            <button type="submit" onClick={saveDataHandler}>Zapisz Dane</button>
         </StyledCreator>
     );
 }

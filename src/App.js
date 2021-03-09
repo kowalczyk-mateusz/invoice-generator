@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Inspector from './Components/Inspector/Inspector';
 import Creator from './Components/Creator/Creator'
 import Navigation from './Components/Navigation/Navigation'
 import { Route, Switch} from 'react-router-dom'
 function App() {
 
+  const [invoiceData, setInvoiceData] = useState()
+  const saveDataHandler = (e) =>{
+    e.preventDefault()
+    setInvoiceData({...invoice})
+  }
   const [invoice, setInvoice] = useState({
     invoiceNumber: '',
     city: '',
@@ -23,6 +28,7 @@ function App() {
     serviceName: '',
     qty: '',
     priceNetto: '',
+    priceBrutto: '',
     vat: '',
     paymentMethod: '',
     paymentDeadline: '',
@@ -38,13 +44,16 @@ function App() {
     });
   }
 
-  console.log(invoice)
+  useEffect(()=>{
+    localStorage.setItem('Invoice', JSON.stringify(invoiceData))
+  },[invoiceData])
+
   return (
     <div className="App">
         <Navigation />
       <Switch>
       <Route path="/" exact >
-        <Creator handleChange={handleChange} invoice={invoice} setInvoice={setInvoice} />
+        <Creator handleChange={handleChange} invoice={invoice} setInvoice={setInvoice} saveDataHandler={saveDataHandler} />
       </Route>
       <Route path="/inspect" component={Inspector} />
       </Switch>

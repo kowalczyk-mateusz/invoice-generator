@@ -2,21 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import BackgroundHeadline from '../../../Assets/BackgroundHeadline'
 
-const Data = () => {
+const Data = ({invoiceInfo}) => {
     return (
         <StyledData>
             <DataInfo>
             <City>
                 <BackgroundHeadline text='Miejsce wystawienia'/>
-                Katowice
+                {invoiceInfo.city}
             </City>
             <IssuingDate>
             <BackgroundHeadline text="Data wystawienia"/>
-                30-12-2020
+               {invoiceInfo.releaseDate}
             </IssuingDate>
             <SaleDate>
             <BackgroundHeadline text="Data sprzedaży"/>
-                30-12-2020
+                {invoiceInfo.saleDate}
             </SaleDate>
             </DataInfo>
         </StyledData>

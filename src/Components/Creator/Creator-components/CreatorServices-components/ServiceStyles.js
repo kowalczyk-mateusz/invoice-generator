@@ -29,3 +29,7 @@ border-radius: 0.33rem;
 export const Option = styled.option`
 
 `
+export const PriceBrutto = styled.div`
+display: flex;
+flex-direction: column;
+`

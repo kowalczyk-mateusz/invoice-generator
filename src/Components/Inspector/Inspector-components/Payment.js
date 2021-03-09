@@ -2,24 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import Line from '../../../Assets/Line'
 import {StyledPayment, PaymentInfo, PaymentMethod, PaymentDeadline, BankNumber, PaymentValue, Amount, AmountInWords, ToPay, Label, Content, ContentValue} from './Styles/PaymentStyles'
-const Payment = () => {
+const Payment = ({invoiceInfo}) => {
     return (
         <StyledPayment>
             <PaymentInfo>
                 <Line />
                 <PaymentMethod>
                     <Label>Sposób płatnośći</Label>
-                    <Content>Przelew</Content>
+                    <Content>{invoiceInfo.paymentMethod}</Content>
                 </PaymentMethod>
                 <Line/>
                 <PaymentDeadline>
                 <Label> Termin płatności</Label>
-                <Content>14 dni</Content>
+                <Content>{invoiceInfo.paymentDeadline}</Content>
                 </PaymentDeadline>
                 <Line/>
                 <BankNumber>
                 <Label> Numer konta</Label>
-                <Content> 11 2222 3333 4444 5555 6666 7777</Content>
+                <Content> {invoiceInfo.accoutNumber}</Content>
                 </BankNumber>
             </PaymentInfo>
             <PaymentValue>
