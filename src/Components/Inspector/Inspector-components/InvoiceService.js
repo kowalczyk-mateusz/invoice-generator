@@ -71,7 +71,7 @@ const InvoiceService = ({invoiceInfo}) => {
                         
                     </OutcomeValueNetto>
                     <OutcomeVat>
-                        {invoiceInfo.vat}
+                        {invoiceInfo.vat}%
                     </OutcomeVat>
                     <OutcomePriceVat>
                         

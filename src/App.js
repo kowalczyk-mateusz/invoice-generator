@@ -29,7 +29,7 @@ function App() {
     qty: '',
     priceNetto: '',
     priceBrutto: '',
-    vat: '',
+    vat: 23,
     paymentMethod: '',
     paymentDeadline: '',
     accountNumber: '',

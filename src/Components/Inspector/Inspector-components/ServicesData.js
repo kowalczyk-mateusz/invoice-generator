@@ -23,7 +23,7 @@ const ServicesData = ({invoiceInfo}) => {
                 
             </ValueNetto>
             <Vat>
-            {invoiceInfo.vat}
+            {invoiceInfo.vat}%
             </Vat>
             <VatPrice>
                 

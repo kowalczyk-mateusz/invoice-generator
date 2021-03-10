@@ -15,19 +15,20 @@ const Service = ({handleChange, invoice, setInvoice}) => {
             </Qty>
             <PriceNetto>
                 <Label>Cena Netto</Label>
-                <Input name="priceNetto" value={invoice.priceNetto} onChange={handleChange} />
+                <Input name="priceNetto" value={invoice.priceNetto} onChange={handleChange} disabled={invoice.priceBrutto !== '' ? true : false}/>
             </PriceNetto>
             <PriceBrutto>
                 <Label>Cena Brutto</Label>
-                <Input name="priceBrutto" value={invoice.PriceBrutto} onChange={handleChange} />
+                <Input name="priceBrutto" value={invoice.PriceBrutto} onChange={handleChange} disabled={invoice.priceNetto !== '' ? true : false}/>
             </PriceBrutto>
             <Vat>
                 <Label>Stawka VAT</Label>
                 <Select name="vat" onChange={handleChange} value={invoice.vat}>
-                    <Option value="23%">23%</Option>
-                    <Option value="8%">8%</Option>
+                    <Option value="23">23%</Option>
+                    <Option value="8">8%</Option>
                 </Select>
             </Vat>
+            
         </StyledService>
     );
 }

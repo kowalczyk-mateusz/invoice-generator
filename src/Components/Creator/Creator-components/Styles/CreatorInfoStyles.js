@@ -25,9 +25,9 @@ font-weight: bold;
 padding-right: 1rem;
 `
 export const Input = styled.input`
-border: 1px solid gray;
 padding: 0.33rem;
 border-radius: 0.33rem;
+border: ${(props) => props.disabled ? '1px solid red' : '1px solid gray'};
 `
 export const CodeInput = styled.div`
 border: 1px solid gray;
