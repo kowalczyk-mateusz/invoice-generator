@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledService = styled.div`
-margin: 3rem 0rem;
+margin: 0.5rem 0rem 3rem 0rem;
 display: flex;
 flex-wrap: wrap;
 `
